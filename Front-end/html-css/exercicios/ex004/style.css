@@ -1,0 +1,57 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+/* 
+
+Medidas absolutas: cm, mm, in, px, pt, pc
+
+Medidas relativas: em, ex, rem, vw, vh, %
+
+16px geralmente = 1em
+
+A recomendação oficial é de usar px e em!!
+
+--
+
+shorthand font
+
+font-style -> font-weight -> font-size -> font-family
+*/
+
+* {
+      font-style: italic;
+      font-weight: normal;
+      font-size: 1em;
+      font-family: 'Roboto', sans-serif;
+
+}
+
+body{
+      background-image: linear-gradient(to right, #F1D8C9,#F2C3A7);
+}
+
+main {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 5px 5px 15px rgba(136, 109, 93, 0.616);
+      width: 600px;
+      padding: 10px;
+      margin: auto;
+}
+
+h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 1.5em;
+      color: #f39209;
+      text-align: center;
+      text-shadow: 1px 1px 2px rgba(129, 77, 5, 0.726);
+}
+
+h2 {
+      color: #125189;
+}
+
+p{
+      text-align: justify;
+}
