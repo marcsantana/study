@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+/* 
+
+ em HTML é id = em CSS é # (só pode um elemento)
+ em HTML é class = em CSS é . (pode vários elementos)
+
+ Uma tag pode herdar mais de uma configuração, por exemplo, pode ter um id e uma classe, ou duas classes. É importante enfatizar que o **id** é mais forte que classe, ou seja, o que está escrito na estilização como id é mais forte e pode sobrepor o que está numa classe.
+
+*/
+
+body{
+      background-color: wheat;
+      font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+      color: black;
+}
+
+h2 {
+      color: #91F280;
+}
+
+h2#html{
+      text-align: center;
+      background-color: #D1F5CB;
+      color: black;
+}
+
+h2#css {
+      text-align: center;
+      background-color: #D1F5CB;
+      color: #45733D;
+}
+
+.basico {
+      color: #26ff00;
+}
+
+.intermediario {
+      color: #e5ff00;
+}
+
+.avancado {
+      color: #ff3300;
+}
