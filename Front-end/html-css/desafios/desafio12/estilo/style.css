@@ -8,8 +8,7 @@
 
 :root {
       --fonte-titulo: 'Passion One', cursive;
-      --fonte-poema: 'Sriracha', cursive;
-      
+      --fonte-poema: 'Sriracha', cursive;   
 }
 
 * {
@@ -24,6 +23,7 @@ header {
 
 header h1 {
       font-family: var(--fonte-titulo);
+      font-size: 9vw;
       text-transform: small-caps;
       color: white;
       padding: 50px 0px 10px 0px;
@@ -47,12 +47,17 @@ header a:hover, footer a:hover {
 
 section {
       font-family: var(--fonte-poema);
+      font-size: 3.5vw;
 
       padding-top: 10vh;
       padding-bottom: 10vh;
       padding-left: 30px;
       
       line-height: 2em;
+}
+
+section > p {
+      padding-bottom: 2em;
 }
 
 section.no-picture {
@@ -64,11 +69,24 @@ section.no-picture {
 section.picture {
       background-color: rgba(0, 0, 0, 0.699);
       color: white;
+      box-shadow: 6px 6px 13px 0px rgba(0, 0, 0, 0.24);
 }
 
 section.picture > p {
-      background-color: rgba(0, 0, 0, 0.308);
-      width: 400px;
+      background-color: rgba(0, 0, 0, 0.212);
+      display: inline-block;
+      padding: 8px;
+      text-shadow: 1px 1px 0px black;
+}
+
+section#img01 {
+      background: black url('../imagens/background001.jpg') right center no-repeat fixed;
+      background-size: cover;
+}
+
+section#img02 {
+      background: black url('../imagens/background002.jpg') left top no-repeat fixed;
+      background-size: cover;
 }
 
 footer {
