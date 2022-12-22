@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Primeiro Formulário</title>
+</head>
+<body>
+      <h1>Formulário v1.0</h1>
+      <form autocomplete="off" action="cadastro.php" method="post">
+            <!-- Name é mais útil para HTML e PHP, enquanto ID é mais útil para o JScript e para o LABEL -->
+            <!-- Usamos GET quando não temos dados sensíveis, e POST (apesar de ainda conseguirmos ver os dados) quando temos dados sensíveis ou queremos enviar arquivos (estudar melhor HTTPS) -->
+            <p>
+                  <label for="idnome">Nome: </label>
+                  <input type="text" name="nome" id="idnome">
+            </p>
+            <p>
+                  <label for="idsobrenome">Sobrenome: </label>
+                  <input type="text" name="sobrenome" id="idsobrenome">
+            </p>
+            <input type="submit" value="Enviar">
+      </form>
+</body>
+</html>
