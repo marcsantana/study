@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Quarto Formulário</title>
+</head>
+<body>
+      <h1>Formulário v4.0</h1>
+      <form action="cadastro.php" method="get">
+            <fieldset>
+                  <legend>Sexo</legend>
+                  <input type="radio" name="sex" id="idmasc" value="M">
+                  <label for="idmasc">Masculino</label> <br>
+
+                  <input type="radio" name="sex" id="idfem" value="F">
+                  <label for="idfem">Feminino</label> <br>
+            </fieldset>
+            <fieldset>
+                  <legend>Esportes Favoritos</legend>
+                  <input type="checkbox" name="esptfut" id="idfut"><label for="idfut">Futebol</label> <br>
+                  
+                  <input type="checkbox" name="espbasq" id="idbasq"><label for="idbasq">Basquete</label> <br>
+                  
+                  <input type="checkbox" name="espnat" id="idnat"><label for="idnat">Natação</label> <br>
+                  
+                  <input type="checkbox" name="espten" id="idten"><label for="idten">Tênis</label> <br>
+            </fieldset>
+            <fieldset>
+                  <legend>Dados Pessoais</legend>
+                  <p>
+                        <label for="idemail">E-mail: </label>
+                        <input type="email" name="email" id="idemail" autocomplete="email" required>
+                  </p>
+                  <p>
+                        <label for="idtel">Telefone: </label>
+                        <input type="tel" name="telefone" id="idtel" autocomplete="tel" pattern="^\([0-9]{2}\)[0-9]{4,5}-[0-9]{4}$" required>
+                  </p>
+                  <p>
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Limpar">
+                  </p>
+            </fieldset>
+      </form>
+</body>
+</html>
