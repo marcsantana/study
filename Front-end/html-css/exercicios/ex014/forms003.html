@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Terceiro Formulário</title>
+</head>
+<body>
+      <h1>Formulário v3.0</h1>
+      <form action="cadastro.php" method="get" autocomplete="on">
+            <p>
+                  <label for="idnome">Nome: </label>
+                  <input type="text" name="nome" id="idnome" required maxlength="60" autocomplete="name">
+            </p>
+            <p>
+                  <label for="idnota">Média: </label>
+                  <input type="number" name="nota" id="idnota" placeholder="0 a 10" required min="0" max="10" step="0.5">
+            </p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+      </form>
+</body>
+</html>
