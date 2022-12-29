@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Sexto Formulário</title>
+</head>
+<body>
+      <h1>Formulário v6.0</h1>
+      <form action="cadastro.php" method="post">
+            <p>
+                  <label for="idnum1">Número 1: </label>
+                  <input type="number" name="num1" id="idnum1" max="50" min="0" required oninput="idsoma.innerHTML = Number(idnum1.value) + Number(idnum2.value)">
+            </p>
+
+            <p>
+                  <label for="idnum2">Número 2: </label>
+                  <input type="number" name="num2" id="idnum2" max="50" min="0" required oninput="idsoma.innerHTML = Number(idnum1.value) + Number(idnum2.value)">
+            </p>
+
+            <p>
+                  <label for="idsoma">Soma: </label>
+                  <output id="idsoma">0</output>
+            </p>
+
+            <p>
+                  <label for="idrangenum">Número em range: </label>
+                  <input type="range" name="rangenum" id="idrangenum" min="0" max="50" value="25" oninput="idvalue.innerHTML = Number(idrangenum.value)">
+
+                  <output id="idvalue">25</output>
+
+            </p>
+
+            <p>
+                  <label for="idano">Ano em que você nasceu: </label>
+                  
+                  <input type="number" name="ano" id="idano" min="1900" max="2022" oninput="calcIdade()"><br>
+                  <output id="ididade">Sua idade é: </output>
+            </p>
+
+            <p>
+                  <input type="submit" value="Enviar">
+                  <input type="reset" value="Limpar">
+            </p>
+
+
+      </form>
+
+      <script>
+            function calcIdade() {
+                  let atual = new Date().getFullYear()
+                  ididade.innerHTML = Number(atual) - Number(idano.value)
+            }
+      </script>
+</body>
+</html>
