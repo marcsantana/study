@@ -5,15 +5,35 @@
             display: none;
       }
 
+      header {
+            padding-bottom: 5px;
+      }
+
       nav {
             display: block;
+            text-align: center;
       }
 
       nav li {
             display: inline-block;
+            margin-right: 60px;
       }
       
       main {
             width: 768px;
+      }
+}
+
+@media print {
+      * {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+      }
+
+      header h1 {
+            color: black;
+      }
+
+      span#burguer, nav, nav li {
+            display: none;
       }
 }
