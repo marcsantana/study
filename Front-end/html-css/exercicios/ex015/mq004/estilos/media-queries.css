@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+/* Todas as medias queries */
+
+/* Sempre pesquisar sobre typical device breakpoints, que é as medias padrões usadas para media queries e diferentes resoluções de tela 
+
+Pequenas telas: até 600px
+Celular: 600px ~ 768px
+Tablet: 768px ~ 992px
+Desktop: 992px ~ 1200px
+Grandes telas: acima de 1200px
+
+*/
+
+@media print {
+      * {
+            font-family: 'Courier New', Courier, monospace;
+            /* background-image: url(../imagens/back-print.jpg); //desnecessário, pois não imprime */
+      }
+
+      main {
+            width: 90vw;
+            border: 2px solid black;
+      }
+
+      main::after {
+            content: 'Essa configuração de impressão foi feita por Marcelo Santana, na aprendizagem de HTML e CSS.';
+      }
+
+      h1 {
+            color: #233eff;
+            text-shadow: none;
+      }
+
+      #iphone {display: none;}
+      #iprint {display: block;}
+
+}
+
+/* 
+
+Configurações para o mobile, mas o arquivo style.css já é mobile first
+
+@media screen and (max-width: 600px) {
+      
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+      
+} */
+
+@media screen and (min-width: 768px) and (max-width: 992px) { /* TABLET */
+      body {
+            background-image: url(../imagens/back-tablet.jpg);
+      }
+
+      #itablet {display: block;}
+
+      #iphone {display: none;}
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) { /* DESKTOP */
+      body {
+            background-image: url(../imagens/back-pc.jpg);
+      }
+
+      #ipc {display: block;}
+
+      #iphone {display: none;}
+}
+
+@media screen and (min-width: 1201px) { /* GRANDES TELAS */
+      body {
+            background-image: url(../imagens/back-tv.jpg);
+      }
+
+      #itv {display: block;}
+
+      #iphone {display: none;}
+}
