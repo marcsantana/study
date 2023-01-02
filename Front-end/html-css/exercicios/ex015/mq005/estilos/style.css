@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+* {
+      padding: 0px;
+      margin: 0px;
+      font-family: 'Roboto', sans-serif;
+}
+
+body, html {
+      background-color: lightgray;
+      width: 100vw;
+      height: 100vh;
+}
+
+header {
+      background-color: rgb(92, 92, 92);
+}
+
+header h1 {
+      text-align: center;
+      padding: 10px;
+      margin-bottom: 5px;
+      color: white;
+      text-shadow: 2px 3px 2px rgba(255, 255, 255, 0.164)
+}
+
+span#burguer {
+      background-color: grey;
+      display: block;
+      text-align: center;
+      padding: 10px;
+      cursor: pointer;
+}
+
+span#burguer:hover {
+      background-color: white;
+      color: black;
+      transition: 4ms;
+}
+
+nav {
+      display: none;
+}
+
+nav > ul {
+      list-style-type: none;
+}
+
+nav a { 
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+      background-color: rgba(223, 218, 218, 0.158);
+      color: white;
+      text-align: center;
+      border-top: 1.8px solid rgba(0, 0, 0, 0.336);
+}
+
+nav a:hover {
+      background-color: rgba(223, 218, 218, 0);
+      transition: 4ms;
+}
+
+main {
+      width: 90vw;
+      background-color: white;
+      margin: auto;
+      padding: 10px;
+      border-radius: 10px;
+      margin-top: 10px;
+}
+
+article h2 {
+      padding-bottom: 20px;
+}
+
+article p {
+      padding-left: 3px;
+      text-align: justify;
+      text-indent: 1.5em;
+      margin-bottom: 20px;
+}
