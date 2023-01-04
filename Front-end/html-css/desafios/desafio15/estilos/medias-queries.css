@@ -24,7 +24,7 @@ Grandes telas: acima de 1200px
 
       section#login {
             width: 80vw;
-            height: 280px;
+            height: 350px;
             overflow: hidden;
       }
 
@@ -38,7 +38,33 @@ Grandes telas: acima de 1200px
             float: right;
             width: 70%;
             height: 100%;
+            font-size: 0.9em;
       }
+
+      div#forms > p {
+            margin-bottom: 10px;
+      }
+
+      div.data {
+            height: 50px;
+      }
+
+      div.data span {
+            font-size: 26px;
+            float: left;
+            width: 10%;
+            padding: 3px;
+      }
+
+      div#forms input[type=email], div#forms input[type=password] {
+            float: center;
+            width: 90%;
+            padding: 5px;
+            border-radius: 6px;
+            border: 1px solid rgba(141, 141, 141, 0.815);
+            text-align: center;
+      }
+
 
 }
 
@@ -69,15 +95,35 @@ Grandes telas: acima de 1200px
       }
 
       div#forms h1 {
-            font-size: 2em;
-            padding: 15px;
+            font-size: 1.5em;
+            padding: 2px;
             font-weight: bold;
       }
 
       div#forms p {
-            font-size: 1.2em;
+            font-size: 1em;
             margin-bottom: 15px;
             text-align: left;
+      }
+
+      div.data {
+            height: 50px;
+      }
+
+      div.data span {
+            font-size: 26px;
+            float: left;
+            width: 13%;
+            padding: 3px;
+      }
+
+      div#forms input[type=email], div#forms input[type=password] {
+            float: center;
+            width: 87%;
+            padding: 5px;
+            border-radius: 6px;
+            border: 1px solid rgba(141, 141, 141, 0.815);
+            text-align: center;
       }
 
 }
