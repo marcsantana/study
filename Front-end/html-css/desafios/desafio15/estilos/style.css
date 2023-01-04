@@ -94,6 +94,10 @@ div#forms input[type=email]:hover, div#forms input[type=password]:hover {
       border: 2px solid var(--color-items);
 }
 
+div#forms input[type=email]:focus-within, div#forms input[type=password]:focus-within {
+      background-color: var(--color-items);
+}
+
 form > input[type=submit] {
       display: block;
       font-size: 1em;
