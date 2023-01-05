@@ -2,6 +2,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 
+/* iniciar os arquivos CSS utilizando :root {font-size: 62,5%}, alterando o valor da fonte para 10px.
+      todo valor que for modificado durante o arquivo CSS será baseado em 10px, ou seja, 1.6rem são 16px.
+*/
+
+:root {
+      font-size: 62.5%;
+}
+
 * {
       padding: 0px;
       margin: 0px;
